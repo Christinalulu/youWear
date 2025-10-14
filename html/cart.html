@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
+          rel="stylesheet">
+
+    <title>youWear</title>
+</head>
+<body>
+
+<!-- Navigation Bar Header -->
+<div class="navHome">
+    <div class="logo">
+        <h1>youWear</h1>
+    </div>
+
+    <div class="navLinks">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/products.html">Products</a>
+        <a href="../html/cart.html">To cart</a>
+        <a href="../html/about.html">About us</a>
+    </div>
+</div>
+<!-- End Navigation Bar Header -->
+
+<main class="cart-page">
+    <section class="cart-left">
+        <h2 class="cart-title">Shopping Cart <span id="cartCount">(0 items)</span></h2>
+
+        <div id="deliveryMsg" class="delivery-msg">
+            <span class="icon">📦</span>
+            <div>
+                <strong>Your order will be delivered by youWear</strong>
+                <div class="delivery-range">Estimated delivery: Tue. 21.10 – Wed. 22.10</div>
+            </div>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+    </section>
+
+    <aside class="cart-right">
+        <div class="summary" id="summaryBox">
+            <div class="row"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+            <div class="row"><span>Shipping</span><strong id="shipping">$0.00</strong></div>
+            <hr>
+            <div class="row total"><span>Total (incl. 25% VAT)</span><strong id="grandTotal">$0.00</strong></div>
+            <a class="btn-checkout" href="../html/checkout.html">Proceed to Checkout</a>
+            <div class="payments">
+                <span class="pill">Vipps</span>
+                <span class="pill">Visa</span>
+                <span class="pill">Mastercard</span>
+                <span class="pill">PayPal</span>
+                <span class="pill">Amex</span>
+            </div>
+        </div>
+    </aside>
+</main>
+
+<script src="../js/products.js"></script>
+<script src="../js/cart.js"></script>
+</body>
+</html>
+
+

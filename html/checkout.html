@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <title>youWear — Checkout</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navHome">
+    <div class="logo"><h1>youWear</h1></div>
+    <div class="navLinks">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/products.html">Products</a>
+        <a href="../html/cart.html">To cart</a>
+        <a href="../html/about.html">About us</a>
+    </div>
+</div>
+
+<main class="checkout-page">
+    <!-- Left: Checkout form -->
+    <section class="panel">
+        <h2>Payment details</h2>
+
+        <form id="checkoutForm" novalidate>
+            <div class="field">
+                <label for="cardName">Name on card</label>
+                <input id="cardName" name="cardName" type="text" placeholder="Jane Doe" autocomplete="cc-name" required>
+            </div>
+
+            <div class="field">
+                <label for="cardNumber">Card number</label>
+                <input id="cardNumber" name="cardNumber" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" autocomplete="cc-number" required>
+            </div>
+
+            <div class="grid-2">
+                <div class="field">
+                    <label for="exp">Expiry (MM/YY)</label>
+                    <input id="exp" name="exp" type="text" inputmode="numeric" placeholder="MM/YY" autocomplete="cc-exp" required>
+                </div>
+                <div class="field">
+                    <label for="cvc">CVC</label>
+                    <input id="cvc" name="cvc" type="text" inputmode="numeric" placeholder="123" autocomplete="cc-csc" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="email">Receipt email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+
+            <button class="buy-btn" type="submit">Buy now</button>
+            <div class="muted">Test mode — no real charge.</div>
+        </form>
+    </section>
+
+    <!-- Right: Order summary -->
+    <aside class="panel">
+        <h2>Order summary</h2>
+
+        <div id="miniItems"></div>
+
+        <div class="summary-row"><span>Subtotal</span><strong id="sumSubtotal">$0.00</strong></div>
+        <div class="summary-row"><span>Shipping</span><strong id="sumShipping">$0.00</strong></div>
+        <div class="summary-row total"><span>Total</span><strong id="sumTotal">$0.00</strong></div>
+    </aside>
+</main>
+
+<!-- Success modal -->
+<div id="successModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+        <div class="big-emoji">✅🙂</div>
+        <h3>Thank you for your purchase!</h3>
+        <p>Your order has been placed successfully.</p>
+        <button id="closeSuccess" class="close-btn" type="button">Continue shopping</button>
+    </div>
+</div>
+
+
+<script src="../js/products.js"></script>
+<script src="../js/checkout.js"></script>
+</body>
+</html>

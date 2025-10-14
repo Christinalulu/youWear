@@ -1,0 +1,36 @@
+
+
+
+
+.logo{
+    font-family: "Instrument Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.navHome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin: 8px;
+    padding: 20px;
+
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    font-family: "Instrument Serif", serif;
+}
+
+.navLinks a:hover {
+    color: #cc6ad3;
+}

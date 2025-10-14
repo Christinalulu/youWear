@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/products.css">
+
+    <title>youWear</title>
+
+</head>
+<body>
+<!-- Navigation Bar  Header -->
+<div class="navHome">
+    <div class="logo">
+        <h1>youWear</h1>
+    </div>
+
+    <div class="navLinks">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/products.html">Products</a>
+        <a href="../html/cart.html">To cart</a>
+        <a href="../html/about.html">About us</a>
+
+    </div>
+</div>
+<!--  Navigation Bar  Header Slutt-->
+
+
+<main class="page">
+    <h2 class="title-collection" >Collection</h2>
+    <div class="products" id="products"></div>
+</main>
+
+<!-- Drawer / Side Window -->
+<div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <header class="drawer-header">
+        <h2 class="drawer-title" id="drawerTitle">Product</h2>
+        <button class="drawer-close" id="drawerClose" aria-label="Close details">Close</button>
+    </header>
+    <div class="drawer-body">
+        <div class="drawer-hero"><img id="drawerImg" alt=""></div>
+        <div class="meta">
+            <div><strong>For:</strong> <span id="drawerFor"></span></div>
+            <div><strong>Color:</strong> <span id="drawerColor"></span></div>
+            <div><strong>Sizes:</strong>
+                <div class="sizes" id="drawerSizes"></div>
+            </div>
+            <div id="drawerPrice" class="drawer-price"></div>
+        </div>
+        <p class="desc" id="drawerDesc"></p>
+        <div class="drawer-actions">
+            <button id="drawerAddCart">Add to cart</button>
+
+        </div>
+    </div>
+</aside>
+
+<div id="sizeModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+        <div class="big-emoji">🧵📏</div>
+        <h3>Choose a size</h3>
+        <p>Please pick a size before adding this item to your cart.</p>
+        <button id="closeSize" class="close-btn" type="button">Okay</button>
+    </div>
+</div>
+
+
+
+
+<script src="../js/products.js"></script>
+</body>
+</html>
