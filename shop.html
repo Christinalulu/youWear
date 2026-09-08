@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon-logo.svg"
+      type="image/x-icon"
+    />
+    <title>Shop | YouWear</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <h1 class="inner-logo">YouWear</h1>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="shop-page">
+      <section class="shop-section">
+        <h2>Shop All Products</h2>
+
+        <div class="shop-controls">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search products..."
+          />
+
+          <select class="category-select">
+            <option value="all">All Categories</option>
+          </select>
+        </div>
+
+        <div class="shop-products-container"></div>
+        <button class="load-more-button">Load More Products</button>
+      </section>
+    </main>
+
+    
+     <script src="js/shop.js"></script>
+  </body>
+</html>
